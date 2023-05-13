@@ -16,9 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/aboutus', function () {
+    return view('aboutus');
+})->name('aboutus');
+Route::get('/carboncalculator', function () {
+    return view('carboncalculator');
+})->name('carboncalculator');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
 
 Auth::routes();
 
